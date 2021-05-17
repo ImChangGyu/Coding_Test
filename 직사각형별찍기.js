@@ -14,18 +14,16 @@ process.stdin.on("data", (data) => {
     }
 });
 //보고 감탄한 코드
-/* 
-process.stdin.setEncoding('utf8');
-process.stdin.on('data', data => {
+process.stdin.setEncoding("utf8");
+process.stdin.on("data", (data) => {
     const n = data.split(" ");
-    const a = Number(n[0]), b = Number(n[1]);
-    const row = '*'.repeat(a)
-    for(let i =0; i < b; i++){
-        console.log(row)
+    const a = Number(n[0]),
+        b = Number(n[1]);
+    const row = "*".repeat(a);
+    for (let i = 0; i < b; i++) {
+        console.log(row);
     }
-
 });
-*/
 //위의 코드는 다른 사람의 풀이에서 확인한 코드인데
 //매우 간결해 놀랐다.
 //repeat이라는 메서드를 이용해 가로의 길이 만큼
